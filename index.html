@@ -1,7 +1,13 @@
 ---
 layout: default
-title: Home
 ---
 
-OkraFramework.github.io
-=======================
+<div class="blog-cover" style="background-image:url(/images/{{ site.global.cover_image }});">
+
+    <section>
+        <div class="container">
+            <h1>{{ site.global.title }}</h1>
+            {% if site.global.subtitle %}<h3>{{ site.global.subtitle }}</h3>{% endif %}
+        </div>
+    </section>
+</div>

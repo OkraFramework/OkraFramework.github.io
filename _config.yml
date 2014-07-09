@@ -1,0 +1,18 @@
+# Site configuration
+
+global:
+  title:     "Okra App Framework"
+  subtitle:  "The app centric MVVM framework for Windows 8.1"
+
+  # Google Fonts
+  # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
+  google_font: 'Droid+Sans:400,700'
+
+
+# Global Jekyll configuration
+
+exclude:
+- Gemfile
+
+pygments: true
+markdown: kramdown

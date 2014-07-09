@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.global.title }}</title>
+    {% if site.global.google_font %}
+    <link href="https://fonts.googleapis.com/css?family={{ site.global.google_font }}" rel="stylesheet" type="text/css">{% endif %}
+    <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.global.title }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+</head>
+<body>
+
+    <section class="site-nav">
+        <header>
+            <nav id="navigation">
+                <span class="brand">Okra App Framework</span>
+                <a href="/" class="home">About</a>
+                <a href="/documentation">Documentation</a>
+            </nav>
+        </header>
+    </section>
+
+    {{ content }}
+
+    <footer class="site-footer">
+        <div class="container">
+            &copy; {{ site.time | date: "%Y" }} Andrew Wilkinson
+        </div>
+    </footer>
+</body>
+</html>

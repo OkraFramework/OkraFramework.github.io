@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="container">
+    {% for section in site.data.documentation %}
+    <h1>{{ section.title }}</h1>
+        {% for subsection in section.subsections %}
+            {% if subsection.url %} <a href="{{ subsection.url }}"> {% endif %}
+            <h3>{{ subsection.title }}</h3>
+            {% if subsection.url %} </a> {% endif %}
+        {% endfor %}
+    {% endfor %}
+</div>
