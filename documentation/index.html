@@ -9,6 +9,13 @@ layout: default
             {% if subsection.url %} <a href="{{ subsection.url }}"> {% endif %}
             <h3>{{ subsection.title }}</h3>
             {% if subsection.url %} </a> {% endif %}
+                {% for subsection2 in subsection.subsections %}
+                {% if subsection2.url %} <a href="{{ subsection2.url }}">
+                    {% endif %}
+                    <h4>{{ subsection2.title }}</h4>
+                    {% if subsection2.url %}
+                </a> {% endif %}
+                {% endfor %}
         {% endfor %}
     {% endfor %}
 </div>

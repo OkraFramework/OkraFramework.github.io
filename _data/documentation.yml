@@ -1,6 +1,31 @@
-- title:	Getting Started
+- title:    Okra App Framework
   subsections:
-    - title:	Downloading the Okra App Framework
-      url:		getting_started_downloading.html
-    - title:    Adding the Okra App Framework to an Existing Project
-      url:      getting_started_adding_to_an_existing_project.html
+    - title:    Getting Started
+      subsections:
+        - title:    Downloading the Okra App Framework
+          url:      okra_app_framework\getting_started_downloading.html
+        - title:    Creating a new Okra App Framework project
+          url:      okra_app_framework\getting_started_creating_a_new_project.html
+        - title:    Adding the Okra App Framework to an Existing Project
+          url:      okra_app_framework\getting_started_adding_to_an_existing_project.html
+        - title:    The Okra App Framework Bootstrapper
+          url:      okra_app_framework\getting_started_okra_app_framework_bootstrapper.html
+    - title:    First Steps with Navigation
+      subsections:
+        - title:    Defining pages and view-models
+        - title:    Convention based page and view-model discovery
+        - title:    Creating pages with the Visual Studio templates
+        - title:    Navigation between pages
+        - title:    Navigation using commands
+        - title:    Passing arguments to pages
+        - title:    State persistence - making your app "always alive"
+    - title:    Integrating with Windows Contracts
+      subsections:
+        - title:    Adding a search page
+        - title:    Adding a settings pane
+        - title:    Sharing items with other applications
+        - title:    Implementing a share target
+    - title:    Advanced navigation scenarios 
+      subsections:
+        - title:    Shell based navigation
+        - title:    Multiple navigation sections
