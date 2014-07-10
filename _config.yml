@@ -16,3 +16,4 @@ exclude:
 
 pygments: true
 markdown: kramdown
+encoding: utf-8
