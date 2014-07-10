@@ -40,7 +40,7 @@ NuGet is a Visual Studio extension that makes it easy to install and update thir
 Studio 2012 and is the easiest way to add the Okra App Framework to existing projects. You can still install the Visual Studio Extension described above to take advantage of
 the item templates.
 
-1. From the Visual Studio Solution Explorer window right click on the **References** folder of your project and select **Manage NuGet Packages…**
+1. From the Visual Studio Solution Explorer window right click on the **References** folder of your project and select **Manage NuGet Packages...**
 
     ![Manage NuGet Packages...](images/NuGetPackages.png)
 
