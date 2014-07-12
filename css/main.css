@@ -2017,7 +2017,7 @@ body {
   margin: 0;
   border: 0;
   padding: 80px 0 0;
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #21272d;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
@@ -2035,7 +2035,7 @@ h1, h2, h3, h4, h5 {
   color: #263c4c; }
 
 h1, h2 {
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
   color: #2077b2;
