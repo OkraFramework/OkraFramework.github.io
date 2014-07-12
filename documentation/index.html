@@ -3,17 +3,17 @@ layout: default
 ---
 
 <div class="container">
-    {% for section in site.data.documentation %}
-    <h1>{{ section.title }}</h1>
-        {% for subsection in section.subsections %}
-            {% if subsection.url %} <a href="{{ subsection.url }}"> {% endif %}
-            <h3>{{ subsection.title }}</h3>
-            {% if subsection.url %} </a> {% endif %}
-                {% for subsection2 in subsection.subsections %}
-                {% if subsection2.url %} <a href="{{ subsection2.url }}">
+    {% for section1 in site.data.documentation %}
+    <h1>{{ section1.title }}</h1>
+        {% for section2 in section1.subsections %}
+            {% if section2.url %} <a href="{{ section2.url }}"> {% endif %}
+            <h3>{{ section2.title }}</h3>
+            {% if section2.url %} </a> {% endif %}
+                {% for section3 in section2.subsections %}
+                {% if section3.url %} <a href="{{ section3.url }}">
                     {% endif %}
-                    <h4>{{ subsection2.title }}</h4>
-                    {% if subsection2.url %}
+                    <h4>{{ section3.title }}</h4>
+                    {% if section3.url %}
                 </a> {% endif %}
                 {% endfor %}
         {% endfor %}
