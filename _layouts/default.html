@@ -16,18 +16,33 @@
         <header>
             <nav id="navigation">
                 <span class="brand">Okra Framework</span>
-                <a href="/" class="home">About</a>
-                <a href="/documentation">Documentation</a>
+                {% for navitem in site.data.nav %}
+                    <a href="{{ navitem.url }}">{{ navitem.title }}</a>
+                {% endfor %}
             </nav>
+            <nav class="tagline">
+                <a data-toggle="collapse" data-target=".nav-dropdown" href="#">...</a>
+            </nav>
+
         </header>
     </section>
+
+    <div class="nav-dropdown collapse">
+        {% for navitem in site.data.nav %}
+            <a href="{{ navitem.url }}">{{ navitem.title }}</a>
+        {% endfor %}
+    </div>
 
     {{ content }}
 
     <footer class="site-footer">
-        <div class="container">
-            &copy; {{ site.time | date: "%Y" }} Andrew Wilkinson
-        </div>
+        &copy; {{ site.time | date: "%Y" }} Andrew Wilkinson
     </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ site.url }}/js/bootstrap.min.js"></script>
 </body>
 </html>

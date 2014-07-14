@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<div class="container">
+<div class="container doc-index">
     {% for section1 in site.data.documentation %}
     <h1>{{ section1.title }}</h1>
         {% for section2 in section1.subsections %}
             {% if section2.url %} <a href="{{ section2.url }}"> {% endif %}
-            <h3>{{ section2.title }}</h3>
+            <h2>{{ section2.title }}</h2>
             {% if section2.url %} </a> {% endif %}
                 {% for section3 in section2.subsections %}
                 {% if section3.url %} <a href="{{ section3.url }}">
                     {% endif %}
-                    <h4>{{ section3.title }}</h4>
+                    <h3>{{ section3.title }}</h3>
                     {% if section3.url %}
                 </a> {% endif %}
                 {% endfor %}
