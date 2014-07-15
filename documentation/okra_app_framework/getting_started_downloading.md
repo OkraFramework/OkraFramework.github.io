@@ -8,7 +8,7 @@ Downloading the Okra App Framework
 
 There are a number of options for downloading the Okra App Framework,
 
-* Using the Visual Studio Extensions
+* [Using the Visual Studio Extensions](#bookmark-vsextenstions)
   - This is the recommended approach for creating new applications with the Okra App Framework. It also provides a number of
     item templates that will be of use to those upgrading existing projects to the Okra App Framework.
 * Via NuGet
@@ -16,7 +16,7 @@ There are a number of options for downloading the Okra App Framework,
 * Downloading the source code
   - For advanced users who wish to view or modify the framework itself.
 
-Downloading the Visual Studio Extensions
+Downloading the Visual Studio Extensions {: #bookmark-vsextenstions}
 ----------------------------------------
 
 The Okra App Framework is available via a Visual Studio extension containing a number of templates based on the standard Windows Store items included with Visual Studio,
