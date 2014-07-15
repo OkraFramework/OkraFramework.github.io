@@ -3,45 +3,45 @@
     - title:    Getting Started
       subsections:
         - title:    Downloading the Okra App Framework
-          url:      okra_app_framework\getting_started_downloading.html
+          url:      okra_app_framework/getting_started_downloading.html
         - title:    Creating a new Okra App Framework project
-          url:      okra_app_framework\getting_started_creating_a_new_project.html
+          url:      okra_app_framework/getting_started_creating_a_new_project.html
         - title:    Adding the Okra App Framework to an Existing Project
-          url:      okra_app_framework\getting_started_adding_to_an_existing_project.html
+          url:      okra_app_framework/getting_started_adding_to_an_existing_project.html
         - title:    The Okra App Framework Bootstrapper
-          url:      okra_app_framework\getting_started_okra_app_framework_bootstrapper.html
+          url:      okra_app_framework/getting_started_okra_app_framework_bootstrapper.html
     - title:    First Steps with Navigation
       subsections:
         - title:    Defining pages and view-models
-          url:      okra_app_framework\navigation_defining_pages_and_viewmodels.html
+          url:      okra_app_framework/navigation_defining_pages_and_viewmodels.html
         - title:    Convention based page and view-model discovery
-          url:      okra_app_framework\navigation_convention_based_discovery.html
+          url:      okra_app_framework/navigation_convention_based_discovery.html
         - title:    Creating pages with the Visual Studio templates
-          url:      okra_app_framework\navigation_creating_pages_with_templates.html
+          url:      okra_app_framework/navigation_creating_pages_with_templates.html
         - title:    Navigation between pages
-          url:      okra_app_framework\navigation_between_pages.html
+          url:      okra_app_framework/navigation_between_pages.html
         - title:    Navigation using commands
-          url:      okra_app_framework\navigation_using_commands.html
+          url:      okra_app_framework/navigation_using_commands.html
         - title:    Passing arguments to pages
-          url:      okra_app_framework\navigation_passing_arguments_to_pages.html
+          url:      okra_app_framework/navigation_passing_arguments_to_pages.html
         - title:    State persistence - making your app "always alive"
-          url:      okra_app_framework\navigation_state_persistence.html
+          url:      okra_app_framework/navigation_state_persistence.html
     - title:    Integrating with Windows Contracts
       subsections:
         - title:    Adding a search page
-          url:      okra_app_framework\contracts_search_page.html
+          url:      okra_app_framework/contracts_search_page.html
         - title:    Adding a settings pane
-          url:      okra_app_framework\contracts_settings_pane.html
+          url:      okra_app_framework/contracts_settings_pane.html
         - title:    Sharing items with other applications
-          url:      okra_app_framework\contracts_sharing_with_other_applications.html
+          url:      okra_app_framework/contracts_sharing_with_other_applications.html
         - title:    Implementing a share target
-          url:      okra_app_framework\contracts_share_targets.html
+          url:      okra_app_framework/contracts_share_targets.html
     - title:    Advanced navigation scenarios 
       subsections:
         - title:    Shell based navigation
-          url:      okra_app_framework\advanced_navigation_shell_based_navigation.html
+          url:      okra_app_framework/advanced_navigation_shell_based_navigation.html
         - title:    Multiple navigation sections
-          url:      okra_app_framework\advanced_navigation_multiple_sections.html
+          url:      okra_app_framework/advanced_navigation_multiple_sections.html
 - title:    Okra Data Framework
   subsections:
     - title:    Getting Started
