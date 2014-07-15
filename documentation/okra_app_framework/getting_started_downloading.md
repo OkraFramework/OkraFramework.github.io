@@ -11,9 +11,9 @@ There are a number of options for downloading the Okra App Framework,
 * [Using the Visual Studio Extensions](#bookmark-vsextenstions)
   - This is the recommended approach for creating new applications with the Okra App Framework. It also provides a number of
     item templates that will be of use to those upgrading existing projects to the Okra App Framework.
-* Via NuGet
+* [Via NuGet](#bookmark-nuget)
   - This is the recommended approach for adding the Okra Framework to existing projects.
-* Downloading the source code
+* [Downloading the source code](#bookmark-sourcecode)
   - For advanced users who wish to view or modify the framework itself.
 
 Downloading the Visual Studio Extensions
@@ -36,6 +36,7 @@ but rewritten to take full advantage of the MVVM pattern.
 
 Obtaining the Okra App Framework via NuGet
 ------------------------------------------
+{: #bookmark-nuget}
 
 NuGet is a Visual Studio extension that makes it easy to install and update third-party libraries and tools in Visual Studio. The NuGet package manager is included in Visual
 Studio 2012 and is the easiest way to add the Okra App Framework to existing projects. You can still install the Visual Studio Extension described above to take advantage of
@@ -53,6 +54,7 @@ the item templates.
 
 Downloading the Okra App Framework source code
 ----------------------------------------------
+{: #bookmark-sourcecode}
 
 If you wish to work directly with the Okra App Framework source code,
 
