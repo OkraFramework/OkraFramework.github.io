@@ -40,7 +40,7 @@ Initializing services
 The bootstrapper is also the best place to perform any service initialization required prior to activation of the application. The default
 **OkraBootstrapper** base class provides a **SetupServices()** method that can be overriden for this purpose.
 
-For example to specify a non-default search page name you would do this as follows,
+For example, to specify a non-default search page name you would do this as follows,
 
 {% highlight c# %}
 public class AppBootstrapper : OkraBootstrapper

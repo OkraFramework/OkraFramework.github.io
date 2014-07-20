@@ -15,6 +15,8 @@ There are a number of options for downloading the Okra App Framework,
   - This is the recommended approach for adding the Okra Framework to existing projects.
 * [Downloading the source code](#bookmark-sourcecode)
   - For advanced users who wish to view or modify the framework itself.
+* [Alpha releases of the Okra Framework](#bookmark-alpha)
+  - For advanced users who wish to experiment with the latest builds of the framework
 
 Downloading the Visual Studio Extensions
 ----------------------------------------
@@ -39,7 +41,7 @@ Obtaining the Okra App Framework via NuGet
 {: #bookmark-nuget}
 
 NuGet is a Visual Studio extension that makes it easy to install and update third-party libraries and tools in Visual Studio. The NuGet package manager is included in Visual
-Studio 2012 and is the easiest way to add the Okra App Framework to existing projects. You can still install the Visual Studio Extension described above to take advantage of
+Studio 2013 and is the easiest way to add the Okra App Framework to existing projects. You can still install the Visual Studio Extension described above to take advantage of
 the item templates.
 
 1. From the Visual Studio Solution Explorer window right click on the **References** folder of your project and select **Manage NuGet Packages...**
@@ -58,5 +60,22 @@ Downloading the Okra App Framework source code
 
 If you wish to work directly with the Okra App Framework source code,
 
-* The latest official release is available in the [Okra.Core releases section](https://github.com/OkraFramework/Okra.Core/releases). The complete source code will be available to download as a zip file.
-* The very latest source code is available from [Okra.Core source control](https://github.com/OkraFramework/Okra.Core). Note that this will not be as stable as the official releases, and may change significantly before release.
+* The latest official release is available in the [Okra.Core releases section](https://github.com/OkraFramework/Okra.Core/releases). The complete source code will be available
+  to download as a zip file.
+
+Alpha releases of the Okra App Framework
+----------------------------------------
+{: #bookmark-alpha}
+
+<div class="alert alert-danger" role="alert">
+	<b>Warning:</b> The alpha releases are for advanced users only - they may be unstable, contain incomplete features and break existing code.
+</div>
+
+In addition to official releases of the Okra App Framework, alpha builds are available for advanced users who wish to experiment with the latest
+builds of the framework. Note that these will not be as stable as the official releases, and may change significantly before a final release is made.
+
+You can access alpha versions of the framework by,
+
+* Downloading the very latest source code from [Okra.Core source control](https://github.com/OkraFramework/Okra.Core).
+* Using the Okra Framework prerelease NuGet package source. You will need to add **https://www.myget.org/F/okra/** as a new
+  package source in Visual Studio, and ensure that **Include Prerelease** is selected.

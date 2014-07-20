@@ -8,8 +8,9 @@ Adding the Okra App Framework to an Existing Project
 
 If you wish to add the Okra App Framework to an existing Windows Store project then the steps required are,
 
-1. Download the Okra App Framework and add the references to your project (downloading via NuGet is recommended)
-2. Add a new 'AppBootstrapper.cs' file to your project with the following code,
+<ol>
+<li>Download the Okra App Framework and add the references to your project ([downloading via NuGet is recommended](getting_started_downloading.html#bookmark-nuget))</li>
+<li>Add a new 'AppBootstrapper.cs' file to your project with the following code,</li>
 
 {% highlight c# %}
 public class AppBootstrapper : OkraBootstrapper
@@ -18,7 +19,7 @@ public class AppBootstrapper : OkraBootstrapper
 {% endhighlight %}
 
 
-3. Clean up your 'App.xaml.cs' file so that it looks like,
+<li>Clean up your 'App.xaml.cs' file so that it looks like,</li>
 
 {% highlight c# %}
 using Okra;
@@ -37,7 +38,7 @@ namespace MyOkraProject
 {% endhighlight %}
 
 
-4. Change the 'App.xaml' definition to derive from OkraApplication (note that you can keep any existing resources and namespace definitions if desired),
+<li>Change the 'App.xaml' definition to derive from OkraApplication (note that you can keep any existing resources and namespace definitions if desired),</li>
 
 {% highlight c# %}
 <okra:OkraApplication
@@ -48,3 +49,4 @@ namespace MyOkraProject
 
 </okra:OkraApplication>
 {% endhighlight %}
+</ol>
