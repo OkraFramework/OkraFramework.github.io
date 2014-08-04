@@ -14,6 +14,5 @@ global:
 exclude:
 - Gemfile
 
-pygments: true
-markdown: kramdown
+highlighter: pygments
 encoding: utf-8

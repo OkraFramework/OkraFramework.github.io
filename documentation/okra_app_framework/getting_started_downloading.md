@@ -27,14 +27,14 @@ but rewritten to take full advantage of the MVVM pattern.
 
 1. From Visual Studio open the extension manager by selecting the **Tools** menu and **Extensions and Updates...**
 
-	![Extensions and Updates](images/ExtensionManagerMenu.png)
+![Extensions and Updates](images/ExtensionManagerMenu.png)
 
 2. Select **Online** from the panel on the left hand side
 3. Type "Okra" into the search box in the top right of the resulting window and press return
 4. Select **Windows Store MVVM Templates for the Okra App Framework** from the list of search results
 5. Click **Download**
 
-	![Extension Manager](images/ExtensionManager.png)
+![Extension Manager](images/ExtensionManager.png)
 
 Obtaining the Okra App Framework via NuGet
 ------------------------------------------
@@ -46,13 +46,13 @@ the item templates.
 
 1. From the Visual Studio Solution Explorer window right click on the **References** folder of your project and select **Manage NuGet Packages...**
 
-    ![Manage NuGet Packages...](images/NuGetPackages.png)
+![Manage NuGet Packages...](images/NuGetPackages.png)
 
 2. Type "Okra" into the search box in the top right of the resulting window and press return
 3. Select **Okra App Framework** from the list of search results (NB: Don't use the **(Core only)** package as this does not include the MEF magic!)
 4. Click **Install**
 
-    ![NuGet Package Manager](images/PackageManager.png)
+![NuGet Package Manager](images/PackageManager.png)
 
 Downloading the Okra App Framework source code
 ----------------------------------------------
