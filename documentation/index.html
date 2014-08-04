@@ -10,11 +10,13 @@ layout: default
             <h2>{{ section2.title }}</h2>
             {% if section2.url %} </a> {% endif %}
                 {% for section3 in section2.subsections %}
+                <p class="doc-level-3">
                 {% if section3.url %} <a href="{{ section3.url }}">
                     {% endif %}
-                    <h3>{{ section3.title }}</h3>
+                    {{ section3.title }}
                     {% if section3.url %}
                 </a> {% endif %}
+                </p>
                 {% endfor %}
         {% endfor %}
     {% endfor %}
