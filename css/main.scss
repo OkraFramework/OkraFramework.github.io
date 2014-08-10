@@ -6,8 +6,6 @@
 /* Bootstrap Typography */
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-
-
 /* Bodytext font */
 $font: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -18,6 +16,10 @@ $fontheadings: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $text: #21272d;
 $textmuted: #848484;
 $accent: #2077b2;
+
+/* Button styles */
+$btn-default-color: red;
+$btn-default-border: red;
 
 
 /* IMPORT CSS FILES */
