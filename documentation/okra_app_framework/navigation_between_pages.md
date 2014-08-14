@@ -6,21 +6,19 @@ title: Navigation between pages
 Navigation between pages
 ========================
 
-Once you have defined the pages for your application you need some way to display them. This can further be split into two scenarios,
+There are two general cases to consider for navigation,
 
-* For a set of standard pages (e.g. application home page, search page, ...) the Okra App Framework will automatically handlenavigation
-at the appropriate times. All you need to do is name the page with one of the SpecialPageNames constants, and in some cases add the
-respective Okra service to your bootstrapper.
-* In other cases where you may want to programatically navigate from one page of you application to another - you do this using the
-INavigationContext and INavigationBase interfaces.
+* For some standard pages (e.g. application home page, search page, ...) the Okra App Framework will automatically handle navigation
+at the appropriate times. See the documentation for each of these features for more information.
+* Otherwise you can programatically navigate from one page of you application to another as detailed below.
 
 Navigating between pages with INavigationBase
 ---------------------------------------------
 
-The first step when you want to implement navigation from a page is to import a navigation manager implementing the **INavigationBase**
-interface. Since Okra supports multiple navigation contexts (e.g. main application, settings panes as well as more advanced navigation scenarios),
-you access the appropriate navigation manager via the **INavigationContext.GetCurrent()** method. For example you would add the following
-constructor to your view-model,
+The first step when implementing page navigation is to obtain a navigation manager. Whilst Okra supports multiple navigation
+contexts, you can access the current navigation manager by importing an **INavigationContext** and calling its **GetCurrent()** method.
+
+For example you would add the following constructor to your view-model,
 
 {% highlight c# %}
 [ViewModelExport("MyPageName")]
@@ -36,9 +34,11 @@ public class MyViewModel : MyViewModelBase
 }
 {% endhighlight %}
 
-You can now use the methods on the **INavigationBase** instance to navigate between pages of your application. The Okra App Framework will manage
-the discovery, creation and navigation to the page specified in the **NavigateTo(...)** method (there are also extension methods to support using
-types for page names). For example,
+You can now use the methods on the navigation manager to navigate between pages of your application.
+
+To navigate to a new page you call
+the **NavigateTo(...)** method with the name of the destination page (there are also extension methods to support using
+types for page names). The Okra App Framework will coordinate the discovery, creation and navigation to the specified page.
 
 {% highlight c# %}
 public void NavigateToPage2()
@@ -47,8 +47,7 @@ public void NavigateToPage2()
 }
 {% endhighlight %}
 
-And to return back through the navigation stack you simply call the **GoBack()** method. The Okra App Framework will handle storage, lifetime management
-and persistence of the navigation stack for you. For example,
+To return back through the navigation stack you simply call the **GoBack()** method.
 
 {% highlight c# %}
 public void NavigateBack()
@@ -60,8 +59,8 @@ public void NavigateBack()
 Programatically determining if you can navigate
 -----------------------------------------------
 
-When calling the **NavigateTo(...)** method it is anticipated that the specified page is defined with the appropriate attributes applied. If the page
-does not exist an exception is throw. Alternatively you can call the **CanNavigateTo(...)** method to return a boolean value representing whether the
+When calling the **NavigateTo(...)** method it is expected that the specified page exists. If the page has not been defined then
+an exception is throw. Alternatively you can call the **CanNavigateTo(...)** method to return a boolean value representing whether the
 specified page exists.
 
 Similarly there is a **CanGoBack** property and associated **CanGoBackChanged** event for determining whether the navigation manager will allow back navigation.
