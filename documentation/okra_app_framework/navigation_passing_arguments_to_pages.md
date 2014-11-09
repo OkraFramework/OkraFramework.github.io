@@ -12,7 +12,7 @@ a "Browse Photos" page in a photo browsing application would need to pass the se
 Passing arguments from the source page
 --------------------------------------
 
-To support the passing of arguments upon navigation the **NavigateTo(...)** method includes an overload for this purpose,
+The **NavigateTo(...)** method includes an overload that supports passing an argument to a page,
 
 {% highlight c# %}
 void NavigateTo(string pageName);
@@ -41,8 +41,8 @@ public interface IActivatable
 
 Upon navigation the Okra App Framework will create the page and view-model as usual, followed by a call the **Activate(...)** method.
 This method will only be called once and prior to display of the view. This method is passed a PageInfo object that contains the information
-required to describe the destination page. By calling the **PageInfo.GetArguments<T>()** method you can obtain the arguments passed from the source
-page. Note that the type argument 'T' should match the type specified in the **NavigateTo(...)** method.
+required to describe the destination page. By calling the **PageInfo.GetArguments&lt;T&gt;()** method you can obtain the arguments passed from the source
+page (the type argument 'T' should match the type used in the **NavigateTo(...)** method).
 
 Note that if session state storage is not being implemented then the **SaveState(...)** method can be empty.
 
