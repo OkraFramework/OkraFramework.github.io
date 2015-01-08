@@ -6,7 +6,11 @@ title: Adding a search page
 Adding a search page
 ====================
 
-NB: Also see [http://andyonwpf.blogspot.co.uk/2012/10/app-search-and-okra-app-framework.html](http://andyonwpf.blogspot.co.uk/2012/10/app-search-and-okra-app-framework.html)
+<div class="alert alert-danger">
+	<b>Warning:</b> As of Windows 8.1 it is no longer recommended to use the search contract for
+	in app search (<a href="http://msdn.microsoft.com/en-us/library/windows/apps/xaml/JJ130767(v=win.10).aspx">see
+	the SearchBox control instead</a>). This feature is included in the Okra App Framework for legacy use only.
+</div>
 
 The Okra App Framework makes it easy to add a search page to your Windows Store application. Advantages of using the framework include,
 
@@ -16,19 +20,14 @@ The Okra App Framework makes it easy to add a search page to your Windows Store 
 
 Thankfully these intricacies are handled by the framework and all you need to do is to provide the desired UI and business logic.
 
-Creating a search page with the Visual Studio templates
--------------------------------------------------------
+Creating a search page
+----------------------
 
-As part of the Visual Studio extension for the Okra App Framework, an MVVM based search page template is provided (see [Creating pages with
-the Visual Studio templates](navigation_creating_pages_with_templates.html) for more information on the page templates).
-
-1. From the Visual Studio solution explorer select Add New Item.
-
-2. Select "Search Contract (MVVM)" and click Add.
-
-3. Initialize the search manager by adding the following import to your application bootstrapper,
+Initialize the search manager by adding the following import to your application bootstrapper,
 
 {% highlight c# %}
+using Okra.Search;
+
 public class AppBootstrapper : OkraBootstrapper
 {
     [Import]
@@ -38,28 +37,42 @@ public class AppBootstrapper : OkraBootstrapper
 }
 {% endhighlight %}
 
-4. Replace all references to 'SampleDataItem' in the search page view-model with a model class to represent individual search results.
+Open the 'Package.appxmanifest' file for the solution. In the 'Declarations' tab add the 'Search' declaration and
+   save changes to the 'Package.appxmanifest'
 
-5. Insert custom code where prompted (look for the "TODO" comments) in the PerformQuery(...) and UpdateResults(...) methods to return the list of sub-categories and the items for a subcategory respectively.
+Add a new page and view-model to the project that will be used as a search page
 
-Creating a search page manually
--------------------------------
-
-Alternatively creating a search page manually follows the same pattern as for any other page. You can use this approach when you wish to
-use a UI that is significantly different to the default search template. The steps to follow are,
-
-1. Initialize the search manager by adding the following import to your application bootstrapper,
+Add **PageExport** and **ViewModelExport** attributes naming the page **SpecialPageNames.Search**
 
 {% highlight c# %}
-public class AppBootstrapper : OkraBootstrapper
+[PageExport(SpecialPageNames.Search)]
+public sealed partial class MySearchPage : Page
 {
-    [Import]
-    public ISearchManager SearchManager { get; set; }
+    ...
+}
 
+[ViewModelExport(SpecialPageNames.Search)]
+public class MySearchViewModel
+{
     ...
 }
 {% endhighlight %}
 
-2. (to be continued!)
+The view-model should also implement the **Okra.Search.ISearchPage** interface. This interface defines a single **PerformQuery(...)** method
+that is called every time a search is performed.
+Note that this may be called multiple times for a single page instance, since if the user performs subsequent searches then
+the page should be updated each time.
 
-TODO (include manifest changes)
+{% highlight c# %}
+[ViewModelExport(SpecialPageNames.Search)]
+public class MySearchViewModel : Okra.Search.ISearchPage
+{
+    ...
+
+    public void PerformQuery(string queryText, string language)
+    {
+        throw new NotImplementedException();
+    }
+}
+{% endhighlight %}
+
