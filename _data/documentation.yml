@@ -30,7 +30,7 @@
       subsections:
         - title:    Adding a search page
           url:      okra_app_framework/contracts_search_page.html
-        - title:    Adding a settings pane
+        - title:    Adding a settings flyout
           url:      okra_app_framework/contracts_settings_pane.html
         - title:    Sharing items with other applications
           url:      okra_app_framework/contracts_sharing_with_other_applications.html
