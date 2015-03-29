@@ -1,0 +1,27 @@
+---
+layout: null
+title : RSS Feed
+---
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Okra Framework Blog</title>
+        <description>News, features and updates on the Okra Framework</description>
+        <link>http://okraframework.github.io/blog</link>
+        <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+        <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+        <ttl>1800</ttl>
+
+{% for post in site.posts %}
+        <item>
+                <title>{{ post.title }}</title>
+                <description>{{ post.content | xml_escape }}</description>
+                <link>http://okraframework.github.io/blog/{{ post.url }}</link>
+                <guid>http://okraframework.github.io/blog/{{ post.id }}</guid>
+                <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        </item>
+{% endfor %}
+
+</channel>
+</rss>

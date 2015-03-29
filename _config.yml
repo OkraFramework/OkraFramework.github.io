@@ -8,6 +8,8 @@ global:
   # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Open+Sans:400,700'
 
+disqus:
+  shortname:  okraframework
 
 # Global Jekyll configuration
 
@@ -16,3 +18,7 @@ exclude:
 
 highlighter: pygments
 encoding: utf-8
+
+permalink:     pretty
+paginate_path: 'blog/page:num/'
+paginate: 10

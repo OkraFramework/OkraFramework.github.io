@@ -9,6 +9,9 @@
     <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.global.title }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <link href="{{ BASE_PATH }}/blog/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed"> 
+    <link href="{{ BASE_PATH }}/blog/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed"> 
+
 
     <!-- Google Analytics --->
     <script>
