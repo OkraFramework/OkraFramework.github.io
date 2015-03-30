@@ -19,6 +19,5 @@ exclude:
 highlighter: pygments
 encoding: utf-8
 
-permalink:     pretty
 paginate_path: 'blog/page:num/'
 paginate: 10
