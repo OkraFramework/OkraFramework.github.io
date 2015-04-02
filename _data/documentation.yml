@@ -40,8 +40,6 @@
       subsections:
         - title:    Shell based navigation
           url:      okra_app_framework/advanced_navigation_shell_based_navigation.html
-        - title:    Multiple navigation sections
-          url:      okra_app_framework/advanced_navigation_multiple_sections.html
 - title:    Okra Data Framework
   subsections:
     - title:    Getting Started
