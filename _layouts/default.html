@@ -30,7 +30,9 @@
     <section class="site-nav">
         <header>
             <nav id="navigation">
-                <span class="brand">Okra Framework</span>
+                <a href="/">
+                    <img class="brand" src="/images/logo_small.png"></img>
+                </a>
                 {% for navitem in site.data.nav %}
                     <a href="{{ navitem.url }}">{{ navitem.title }}</a>
                 {% endfor %}
