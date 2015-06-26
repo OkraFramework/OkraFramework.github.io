@@ -79,3 +79,5 @@ You can access alpha versions of the framework by,
 * Downloading the very latest source code from [Okra.Core source control](https://github.com/OkraFramework/Okra.Core).
 * Using the Okra Framework prerelease NuGet package source. You will need to add **https://www.myget.org/F/okra/** as a new
   package source in Visual Studio, and ensure that **Include Prerelease** is selected.
+* Installing the Okra Framework prerelease Visual Studio Extension. You will need to add **https://www.myget.org/F/okra/vsix/**
+  as a new extension gallery in Visual Studio ("Environment > Extensions and Updates" in the options).
