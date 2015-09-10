@@ -8,6 +8,9 @@ global:
   # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Open+Sans:400,700'
 
+gems:
+  - jekyll-feed
+
 disqus:
   shortname:  okraframework
 
