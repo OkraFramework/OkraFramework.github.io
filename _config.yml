@@ -10,6 +10,7 @@ global:
 
 gems:
   - jekyll-feed
+  - jekyll-paginate
 
 disqus:
   shortname:  okraframework
@@ -19,7 +20,6 @@ disqus:
 exclude:
 - Gemfile
 
-highlighter: pygments
 encoding: utf-8
 
 paginate_path: 'blog/page:num/'
