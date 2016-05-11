@@ -11,6 +11,7 @@ global:
 gems:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
 
 disqus:
   shortname:  okraframework
