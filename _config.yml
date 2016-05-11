@@ -12,6 +12,7 @@ gems:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 disqus:
   shortname:  okraframework
